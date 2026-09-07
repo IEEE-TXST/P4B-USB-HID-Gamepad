@@ -2,6 +2,8 @@
 
 *Part of the P4-B manual split. See `P4B_1_Start_Here.md` for the full file list and how to use this manual.*
 
+**Before you start writing code:** this project is the one exception to "create a blank project via the wizard" elsewhere in this series. USB needs NXP's full device stack (chapter-9 enumeration, HID class handling, the KHCI controller driver) already wired together correctly, which the plain SDK wizard doesn't set up for you. Instead, use MCUXpresso's Quickstart Panel **"Import SDK example(s)..."** option and import `usb_device_hid_mouse` (the `bm`, bare-metal variant) directly. That gives you a real, working, managed-build project with USB already configured correctly; from there, follow Section 6 to see exactly what changes and why, referencing `demo_code/01_gamepad_reference/` for the finished result if you get stuck.
+
 ---
 
 ## 4. Additional Toolchain for This Project
